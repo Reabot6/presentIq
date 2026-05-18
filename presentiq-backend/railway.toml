@@ -1,0 +1,12 @@
+# railway.toml — place in presentiq-backend/
+
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+[environments.production.variables]
+APP_ENV = "production"

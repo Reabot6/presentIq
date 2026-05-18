@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #F7F6F3;
+  --surface: #FFFFFF;
+  --border: rgba(0,0,0,0.08);
+  --text-primary: #111111;
+  --text-secondary: #787774;
+  --text-hint: #AEADA9;
+  --accent: #111111;
+  --accent-fg: #FFFFFF;
+  --green: #346538;
+  --green-bg: #EDF3EC;
+  --amber: #956400;
+  --amber-bg: #FBF3DB;
+  --red: #9F2F2D;
+  --red-bg: #FDEBEC;
+  --blue: #1F6C9F;
+  --blue-bg: #E1F3FE;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+body {
+  font-family: 'Geist', 'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { transition: color 0.15s, background 0.15s, border-color 0.15s, opacity 0.15s; }

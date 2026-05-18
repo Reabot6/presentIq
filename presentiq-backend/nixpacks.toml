@@ -1,0 +1,11 @@
+# nixpacks.toml — place in presentiq-backend/
+# Forces Railway to use Python 3.11 (required for mediapipe)
+
+[phases.setup]
+nixPkgs = ["python311", "python311Packages.pip"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "uvicorn main:app --host 0.0.0.0 --port $PORT"
