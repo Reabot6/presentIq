@@ -26,7 +26,7 @@ Presenting is hard, and for many people it's a real barrier in school and at wor
 
 It's built with **inclusive education** in mind: giving people who struggle with presenting a private, judgement-free way to build confidence and skills.
 
-> Built for **[X]**, for **[Y]**. <!-- fill in: who or what this was built for, e.g. a hackathon, a programme, a community -->
+
 
 ---
 
