@@ -1,98 +1,84 @@
 <div align="center">
-                                    _   ___ ___
- _ __  _ __ ___  ___  ___ _ __ | |_|_ _/ _ \
-| '_ \| '__/ _ \/ __|/ _ \ '_ \| __|| | | | |
-| |_) | | |  __/\__ \  __/ | | | |_ | | |_| |
-| .__/|_|  \___||___/\___|_| |_|\__|___\__\_\
-|_|
 
-An AI coach for people who struggle with presenting.
+```
+ ____                         _   ___ ___
+|  _ \ _ __ ___  ___  ___ _ _| |_|_ _/ _ \
+| |_) | '__/ _ \/ __|/ _ \ '_ \ __|| | | | |
+|  __/| | |  __/\__ \  __/ | | | |_ | | |_| |
+|_|   |_|  \___||___/\___|_| |_|\__|___\__\_\
+```
+
+### An AI coach for people who struggle with presenting
+
+[![Live Preview](https://img.shields.io/badge/Live-Preview-0ea5e9?style=for-the-badge&logo=vercel)](https://github.com/Reabot6/presentIq)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Reabot6/presentIq)
+[![Built for](https://img.shields.io/badge/Built%20for-FirstCommit%202026-8b5cf6?style=for-the-badge)](#)
 
 </div>
 
-⸻
+---
 
-What is presentIQ?
+## What is presentIQ?
 
 Presenting is hard.
 
-For many people, presentations can become a barrier in school, interviews, pitches, and the workplace. Most people only receive meaningful feedback after the presentation is already over.
+For many people, presentations become a real barrier — in school, interviews, pitches, and the workplace. Most feedback only arrives *after* the presentation is already over.
 
-presentIQ is an AI presentation coach designed to let people practise privately and receive feedback before the stakes are high.
+**presentIQ** is an AI presentation coach that lets people practise privately and get useful feedback *before* the stakes are high.
 
-It listens to what you say, observes how you deliver it, and analyses different aspects of your presentation to help you understand what you’re doing well and what you can improve.
+It listens to what you say, observes how you deliver it, and analyses multiple aspects of your presentation so you can clearly see what you’re doing well and what you can improve.
 
-I built presentIQ with inclusive education in mind — giving people who struggle with presenting a private, judgement-free environment to practise at their own pace.
+Built with **inclusive education** in mind — a private, judgement-free space to practise at your own pace.
 
-⸻
+---
 
-How It Works
+## How It Works
 
-   ┌───────────┐   ┌───────────┐   ┌───────────┐   ┌───────────┐
-   │   QUIZ    │ → │  RECORD   │ → │  ANALYSE  │ → │  FEEDBACK │
-   └───────────┘   └───────────┘   └───────────┘   └───────────┘
+```
+┌───────────┐     ┌───────────┐     ┌───────────┐     ┌───────────┐
+│   QUIZ    │ ──► │  RECORD   │ ──► │  ANALYSE  │ ──► │  FEEDBACK │
+└───────────┘     └───────────┘     └───────────┘     └───────────┘
+```
 
-1. Quiz
+| Step | What happens |
+|------|--------------|
+| **1. Quiz** | Short pre-presentation quiz to check understanding of the material |
+| **2. Record** | Record your presentation directly in the app |
+| **3. Analyse** | Speech recognition, language analysis, and computer vision run in parallel |
+| **4. Feedback** | Signals are combined into clear strengths + actionable improvements |
 
-Users can take a short pre-presentation quiz to test their understanding of the material they are about to present.
+---
 
-2. Record
+## Features
 
-The user records their presentation through the application.
+| Icon | Feature | Description |
+|------|---------|-------------|
+| 🎯 | **Pre-presentation Quiz** | Checks whether the presenter understands their material before they begin |
+| 🎙️ | **Speech Analysis** | OpenAI Whisper transcription + speech data for deeper analysis |
+| 👁️ | **Computer Vision** | Analyses visual delivery and presentation behaviour |
+| 👐 | **Gesture & Posture** | Detects and evaluates gestures, posture, and body language |
+| 📝 | **Language Analysis** | Examines word choice, phrasing, and clarity |
+| 💡 | **Actionable Feedback** | Turns raw analysis into clear, human-friendly improvement advice |
 
-3. Analyse
+---
 
-presentIQ processes the recording using multiple analysis systems, including speech recognition, language analysis, and computer vision.
+## Tech Stack
 
-4. Feedback
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React · Vite · JavaScript |
+| **Styling** | HTML · CSS |
+| **Backend** | Python · FastAPI |
+| **Speech Recognition** | OpenAI Whisper |
+| **Computer Vision** | Computer Vision pipeline |
+| **Language Analysis** | Groq / AI |
+| **API Communication** | REST |
 
-The different signals are combined into feedback that highlights strengths and areas for improvement.
+---
 
-⸻
+## Project Structure
 
-Features
-
-🎯 Pre-presentation Quiz
-
-Checks whether the presenter understands their material before they begin.
-
-🎙️ Speech Analysis
-
-Uses OpenAI Whisper to transcribe the presentation and provide speech data for further analysis.
-
-👁️ Computer Vision
-
-Analyses visual aspects of the presentation, including presentation behaviour and physical delivery.
-
-👐 Gesture & Posture Analysis
-
-Identifies and analyses gestures, posture, and other aspects of body language.
-
-📝 Language Analysis
-
-Analyses the words and phrasing used during the presentation.
-
-💡 Actionable Feedback
-
-Transforms the analysis into feedback designed to help the presenter understand what to improve.
-
-⸻
-
-Tech Stack
-
-Layer	Technology
-Frontend	React, Vite, JavaScript
-Styling	HTML, CSS
-Backend	Python, FastAPI
-Speech Recognition	OpenAI Whisper
-Computer Vision	Computer Vision
-Language Analysis	Groq / AI
-API Communication	REST
-
-⸻
-
-Project Structure
-
+```
 presentIq/
 │
 ├── presentiq-frontend/
@@ -106,197 +92,181 @@ presentIq/
 │   └── ...
 │
 └── .gitignore
+```
 
-The project is separated into a React/Vite frontend and a Python/FastAPI backend.
+Clean separation: **React/Vite frontend** + **Python/FastAPI backend**.
 
-⸻
+---
 
-Live Preview
+## Live Preview
 
-A hosted version of the frontend experience is available here:
+A hosted version of the frontend experience is available:
 
-Open presentIQ Live Preview
+**→ [Open presentIQ Live Preview](https://github.com/Reabot6/presentIq)**
 
-Note: The hosted preview currently represents the frontend experience.
+> **Note:** The hosted preview currently shows the frontend experience.  
+> The complete application includes a backend that handles speech, language, and computer-vision analysis.
 
-The complete application includes a backend responsible for processing presentation data, speech, language, and computer-vision analysis.
+---
 
-⸻
+## Running the Full Application Locally
 
-Running the Full Application Locally
+### Prerequisites
 
-The complete presentIQ application can be run locally from the repository.
+- Git
+- Node.js + npm
+- Python 3.x + pip
 
-Prerequisites
+### 1. Clone the repository
 
-Make sure you have:
-
-* Git
-* Node.js
-* npm
-* Python 3.x
-* pip
-
-1. Clone the repository
-
+```bash
 git clone https://github.com/Reabot6/presentIq.git
 cd presentIq
+```
 
-2. Start the Backend
+### 2. Start the Backend
 
+```bash
 cd presentiq-backend
 
-Create and activate a Python virtual environment:
-
+# Create & activate virtual environment
 python -m venv venv
 
-Windows
-
+# Windows
 venv\Scripts\activate
 
-macOS / Linux
-
+# macOS / Linux
 source venv/bin/activate
 
-Install the Python dependencies:
-
+# Install dependencies
 pip install -r requirements.txt
 
-Create the environment file:
-
+# Environment variables
 cp .env.example .env
+# → Add your API credentials to .env
 
-Add the required API credentials to .env.
-
-Then start the FastAPI server using the project’s configured entry point.
-
-For example:
-
+# Start the server
 uvicorn main:app --reload
+```
 
-If the backend entry file or FastAPI application object uses a different name, use the corresponding command from the backend source.
-
-3. Start the Frontend
+### 3. Start the Frontend
 
 Open a second terminal:
 
+```bash
 cd presentIq/presentiq-frontend
 
-Install the frontend dependencies:
-
 npm install
-
-Start the Vite development server:
-
 npm run dev
+```
 
-Vite will provide a local URL, typically:
+Vite will give you a local URL (usually `http://localhost:5173`). Open it in your browser.
 
-http://localhost:5173
+---
 
-Open that URL in your browser.
+## Environment Variables
 
-⸻
+Create a `.env` file inside `presentiq-backend/`:
 
-Environment Variables
-
-The backend requires API credentials for its AI services.
-
-Create a .env file inside:
-
-presentiq-backend/
-
-using:
-
+```bash
 cp .env.example .env
+```
 
-Then add the required credentials.
+Then add the required API credentials.
 
-Important
+> **Important**  
+> Never commit your `.env` file or expose API keys publicly.  
+> Variable names should match those used by the backend’s Groq client.
 
-Never commit your .env file or expose API keys publicly.
+---
 
-The exact Groq environment variable names should match the variables referenced by the backend’s Groq client implementation.
+## Why Isn’t the Full Backend Hosted?
 
-⸻
+I wanted a full live deployment, but the backend needs server-side resources for the AI and computer-vision pipeline.
 
-Why Isn’t the Full Backend Hosted?
+During the hackathon, free hosting options either had tight usage limits or were only available for a short time. Rather than ship a backend that could become unavailable, I kept the complete application **fully runnable locally** and provided a hosted frontend preview for judges.
 
-I wanted to provide a live deployment, but the backend requires server-side processing resources for the AI and computer-vision pipeline.
+The public GitHub repository contains everything needed to run the full stack.
 
-During the hackathon, the free hosting options I evaluated either had usage limitations or were only available for a limited period. Rather than deploy a backend that could become unavailable or unreliable, I kept the complete application runnable locally and provided a hosted frontend preview for judges.
+---
 
-The public GitHub repository contains the full source code required to run the application locally.
-
-⸻
-
-Screenshots
+## Screenshots
 
 <!-- Add screenshots or a demo GIF here -->
 
+```
 Presentation Workflow
+─────────────────────
+        Quiz
+         ↓
+  Record Presentation
+         ↓
+ Speech + Vision Analysis
+         ↓
+   Language Analysis
+         ↓
+ Personalised Feedback
+```
 
-Quiz
-  ↓
-Record Presentation
-  ↓
-Speech + Vision Analysis
-  ↓
-Language Analysis
-  ↓
-Personalised Feedback
+---
 
-⸻
+## Challenges
 
-Challenges
+One of the biggest challenges was turning something subjective like “good presenting” into measurable signals.
 
-One of my biggest challenges was turning something subjective like “good presenting” into measurable signals.
+A presentation isn’t only about the words. Delivery also involves:
 
-A presentation isn’t just about the words being spoken. Delivery also involves pacing, gestures, posture, body language, and word choice.
+- Pacing
+- Gestures
+- Posture
+- Body language
+- Word choice
 
-I had to think about how to analyse these different signals independently and combine them into feedback without overwhelming the user with meaningless numbers.
+I had to design independent analysis paths and then combine them into feedback that feels useful — not just a wall of numbers.
 
-Another challenge was processing recorded audio and video while connecting several different analysis systems into one workflow.
+Other challenges included:
 
-Finally, deployment was a challenge because the backend requires resources that weren’t practical to maintain on the free hosting options available to me during the hackathon.
+- Processing recorded audio + video
+- Connecting multiple analysis systems into one coherent workflow
+- Deployment constraints (resource-heavy backend on free hosting)
 
-⸻
+---
 
-What I Learned
+## What I Learned
 
-Building presentIQ taught me that building an AI application isn’t simply about connecting an AI model to a frontend.
+Building presentIQ taught me that an AI application is more than “connect a model to a frontend.”
 
-The difficult part is determining:
+The hard questions are:
 
-* What should actually be measured?
-* How reliable is each signal?
-* How should different signals be combined?
-* How do I turn raw model output into useful human feedback?
+- What should actually be measured?
+- How reliable is each signal?
+- How should different signals be combined?
+- How do you turn raw model output into useful human feedback?
 
-Working with speech, language, and computer vision also showed me how much more useful AI can become when multiple modalities are combined around one specific problem.
+Working with speech, language, and computer vision also showed how much more powerful AI becomes when multiple modalities focus on one clear problem.
 
-Most importantly, I learned how to make pragmatic engineering decisions under real constraints while still keeping the complete application functional and reproducible locally.
+Most importantly, I learned to make pragmatic engineering decisions under real constraints while keeping the full application functional and reproducible locally.
 
-⸻
+---
 
-What’s Next?
+## What’s Next?
 
-Future versions of presentIQ could include:
+Future versions could include:
 
-* More detailed body-language analysis
-* Improved gesture detection
-* Pacing and pause analysis
-* Filler-word detection
-* More advanced language analysis
-* Personalised presentation recommendations
-* Presentation history
-* Progress tracking
-* Comparison between practice sessions
-* More advanced presentation scoring
-* A fully hosted production backend
+- More detailed body-language analysis
+- Improved gesture detection
+- Pacing and pause analysis
+- Filler-word detection
+- Advanced language analysis
+- Personalised presentation recommendations
+- Presentation history & progress tracking
+- Session comparison
+- More advanced scoring
+- Fully hosted production backend
 
-The long-term goal is to create a continuous presentation training loop:
+**Long-term vision — a continuous training loop:**
 
+```
         ┌──────────┐
         │ PRACTISE │
         └────┬─────┘
@@ -314,51 +284,54 @@ The long-term goal is to create a continuous presentation training loop:
         └────┬─────┘
              │
              └──────────→ PRACTISE AGAIN
+```
 
-⸻
+---
 
-Contributing
+## Contributing
 
 Open to collaboration.
 
-If you’re interested in inclusive education, accessibility, AI, speech analysis, or computer vision, contributions are welcome.
+If you care about inclusive education, accessibility, AI, speech analysis, or computer vision — contributions are welcome.
 
-1. Fork the repository.
-2. Create a feature branch:
+1. Fork the repository
+2. Create a feature branch  
+   ```bash
+   git checkout -b feature/your-idea
+   ```
+3. Make your changes
+4. Commit  
+   ```bash
+   git commit -m "Add your feature"
+   ```
+5. Push  
+   ```bash
+   git push origin feature/your-idea
+   ```
+6. Open a pull request
 
-git checkout -b feature/your-idea
+Issues, ideas, and feedback are all welcome.
 
-3. Make your changes.
-4. Commit:
+---
 
-git commit -m "Add your feature"
+## Built for FirstCommit 2026
 
-5. Push your branch:
+presentIQ was built during **FirstCommit 2026** as a solo project exploring AI, computer vision, inclusive education, and presentation coaching.
 
-git push origin feature/your-idea
+It was an opportunity to work across speech recognition, computer vision, web development, backend APIs, and AI-powered feedback — taking an idea from concept to a working application.
 
-6. Open a pull request.
+---
 
-Issues, ideas, and feedback are welcome.
+<div align="center">
 
-⸻
+**Author**
 
-Built for FirstCommit 2026
+**Adeiza Onimisi Adeolu**
 
-I built presentIQ during FirstCommit 2026 as a solo project exploring AI, computer vision, inclusive education, and presentation coaching.
+[@Reabot6](https://github.com/Reabot6) · onimisiadeolu@gmail.com
 
-The project gave me the opportunity to work across speech recognition, computer vision, web development, backend APIs, and AI-powered feedback while taking an idea from concept to a working application.
+---
 
-⸻
+License · See the repository for licensing information
 
-Author
-
-Adeiza Onimisi Adeolu
-
-@Reabot6 · onimisiadeolu@gmail.com
-
-⸻
-
-License
-
-See the repository for licensing information.
+</div>
