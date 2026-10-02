@@ -102,7 +102,7 @@ Clean separation: **React/Vite frontend** + **Python/FastAPI backend**.
 
 A hosted version of the frontend experience is available:
 
-**→ [Open presentIQ Live Preview](https://github.com/Reabot6/presentIq)**
+**→ [Open presentIQ Live Preview]([httpss://github.com/Reabot6/presentIq](https://present-iq-nu.vercel.app/)**
 
 > **Note:** The hosted preview currently shows the frontend experience.  
 > The complete application includes a backend that handles speech, language, and computer-vision analysis.
